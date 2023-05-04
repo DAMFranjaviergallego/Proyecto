@@ -1,0 +1,28 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="start" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+    <ion-title color="primary">Menú</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let c of componentes | async"
+     [href]="c.redirectTo" 
+     detail>
+      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+<!-- te lleva a otra pantalla -->
+<!-- <ion-button href="/alert">alert</ion-button>
+<ion-button href="/action-shhet">action-shhet</ion-button> -->
+</ion-content>

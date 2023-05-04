@@ -1,0 +1,25 @@
+[
+
+    {
+      "icon": "radio-button-on",
+      "name": "AccionesComerciales",
+      "redirectTo": "/AccionesComerciales"
+    },
+    {
+      "icon": "radio-button-on",
+      "name": "Clientes",
+      "redirectTo": "/Clientes"
+    },
+    {
+      "icon": "radio-button-on",
+      "name": "Comisionista",
+      "redirectTo": "/Comisisonista"
+    },
+    {
+      "icon": "radio-button-on",
+      "name": "PedidosPendientes",
+      "redirectTo": "/PedidosPendientes"
+    }
+    
+  
+  ]
